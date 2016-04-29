@@ -6,7 +6,7 @@ PixScale=512
 im = Image.new("RGB",(PixScale,PixScale),"black")
 d = ImageDraw.Draw(im)
 
-N = 2
+N = 3
 NColors = pow(N,3)
 NColumns = int(pow(NColors,0.5))+1
 NRows = NColumns
