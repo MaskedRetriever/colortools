@@ -17,9 +17,9 @@ h=PixScale/NRows
 for i in range(0,NColors):
 	x=(i%NColumns)*w
 	y=((i/NColumns))*h
-	r=(i%N)*(256/(N-1))
-	g=((i/N)%N)*(256/(N-1))
-	b=((i/(N*N))%N)*(256/(N-1))
+	r=(i%N)*(255/(N-1))
+	g=((i/N)%N)*(255/(N-1))
+	b=((i/(N*N))%N)*(255/(N-1))
 	d.rectangle([x,y,x+w,y+h],fill=(r,g,b))
 	#print("R: " + str(r) + " G: " + str(g) + " B: " +str(b))
 	#print("X: " + str(x) + " Y: " + str(y))
